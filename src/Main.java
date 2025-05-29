@@ -126,7 +126,7 @@ public class Main {
                 // Si adivina una letra recorrera la lista y le mostrara la palabra oculta con la letra que adivino
                 if (letter == word.charAt(j)){
                     wordSecret[j] = letter;
-                    System.out.println(wordSecret[j]);
+//                    System.out.println(wordSecret[j]);
                     correctLetter = true;
                 }
             }
@@ -138,7 +138,7 @@ public class Main {
             // Se verificara si la palabra es igual a las letras que el usuario a adivinado
             if (String.valueOf(wordSecret).equals(word)) {
                 System.out.println("Haz adivinado la palabra, Muy bien!");
-                break;
+                isGuess = true;
             }
         }
         // Mensaje de que el juego termino
